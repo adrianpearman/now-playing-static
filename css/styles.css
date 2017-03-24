@@ -44,12 +44,11 @@ figure {
   clear: both;
 }
 
-
 /* NAVIGATION styles */
 .site-logo {
   position: fixed;
   top: 1rem;
-  left: 1rem;
+  left: 4px;
   width: 80px;
   height: 80px;
   margin: 0;
@@ -194,4 +193,57 @@ figure {
 
 .about > p {
   margin: 0;
+}
+
+
+@media (min-width: 768px){
+  ul.site-nav-list {
+  position: fixed;
+  left: 0px;
+  top: 100px;
+  width: 10%;
+  z-index: 10;
+  height: 100%;
+  }
+
+  .movie-image {
+  padding-left: 10.2%;
+  }
+  .movie-overview{
+    display:block;
+  }
+  .movie-details {
+  position: absolute;
+  bottom: 0;
+  left: 11%;
+  right: 0;
+  width: 90%;
+  padding: 1em;
+  color: #ffffff;
+  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  margin-left: -7px;
+  }
+
+  .site-nav-item {
+  /* float: left; */
+  width: 100%;
+  height: 60px;
+  padding: 0.75em;
+  font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.6em;
+  text-align: center;
+  text-transform: uppercase;
+  }
+  .movie-overview {
+    display: block;
+    position: relative;
+    width: 87%;
+}
+
+}
+
+@media (min-width: 992px){
+  .movie-overview{
+    display:none;
+  }
 }
