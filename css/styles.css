@@ -205,19 +205,21 @@ figure {
   z-index: 10;
   height: 100%;
   }
-
-  .movie-image {
-  padding-left: 10.2%;
+  main{
+    padding-left: 10%
   }
+  /*.movie-image {
+  padding-left: 10.2%;
+  }*/
   .movie-overview{
     display:block;
   }
   .movie-details {
   position: absolute;
   bottom: 0;
-  left: 11%;
+  left: 1%;
   right: 0;
-  width: 90%;
+  width: 100%;
   padding: 1em;
   color: #ffffff;
   background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.7) 100%);
@@ -245,5 +247,24 @@ figure {
 @media (min-width: 992px){
   .movie-overview{
     display:none;
+  }
+  article.movie {
+    float: left;
+    width: 33.33333333%;
+  }
+  article.movie:first-child p.movie-overview {
+      display: block;}
+
+article.movie:first-child {
+    width: 100%;
+  }
+  /*img.movie-backdrop{
+    float: left;
+    width: 33%;
+
+    img.movie-backdrop
+  }*/
+  footer {
+    clear: both;
   }
 }
